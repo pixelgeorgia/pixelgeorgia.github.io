@@ -17,7 +17,7 @@ const toggleBtn = document.querySelector('.toggle-btn')
 
         document.addEventListener('DOMContentLoaded', function () {
     var misalmText = document.querySelector('.misalmtext');
-    var misalmElement = document.querySelector('.misalm');
+    var misalmElement = document.querySelector('.misalmeba');
 
     misalmElement.addEventListener('animationend', function () {
         misalmText.style.visibility = 'visible';
