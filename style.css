@@ -255,7 +255,7 @@ h1 {
 
 
 
-@media(max-width: 576px) {
+@media(max-width: 576px) { /*XL phone*/
     .dropdown-menu {
         left: 2rem;
         width: unset;
@@ -284,7 +284,7 @@ h1 {
     }
 }
 
-@media(max-width: 992px) {
+@media(max-width: 992px) { /*Laptop and a Tablet*/
     body {
         background-image: url(photos/flag-of-georgia-vertical.png);
         background-size: cover;
@@ -310,7 +310,7 @@ h1 {
 @media(max-width: 320px) { /*Small Mobile*/
 
     .misalmtext {
-      font-size: 0.77rem;
+      font-size: 0.79rem;
     }
 
     .dropdown-menu {
@@ -321,6 +321,6 @@ h1 {
     }
 
     .misalmeba {
-        font-size: 2px !important;
+        font-size: 33px !important;
     }
 }
