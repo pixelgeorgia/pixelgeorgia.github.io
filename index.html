@@ -1,47 +1,326 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/783e2f6fa6.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
-<title>Pixel Georgia</title>
-  </head>
-  <body>
-    <header>
-      <div class="navbar">
-        <div class="logo"><a href="file:///C:/Users/user/Desktop/code/pixelgeorgia/index.html" style="font-family: 'Lemon Milk';">Pixel Georgia</a></div>
-        <ul class="links">
-          <li class="mtavari"><a href="file:///C:/Users/user/Desktop/code/pixelgeorgia/index.html" style="font-size: 19px; font-family: 'alk-katerina';">მთავარი</li>
-          <li class="chvensshesaxeb"><a href="about" style="font-size: 19px; font-family: 'alk-katerina';">ჩვენს შესახებ</li>
-          <li class="tutorialebi"><a href="tutorials" style="font-size: 19px; font-family: 'alk-katerina';">ტუტორიალები</li>
-        </ul>
-        <a href="https://discord.com/invite/8zTKVYTReF" class="action-btn">Join</a>
-        <div class="toggle-btn">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-      </div>
 
-      <div class="dropdown-menu">
-        <li><a href="hero">მთავარი</li>
-        <li><a href="about">ჩვენს შესახებ</li>
-        <li><a href="tutorials">ტუტორიალები</li>
-        <li><a href="#" class="action-btn">Join</a></li>
-      </div>
-    </header>
+@font-face {
+  font-family: "alk-katerina";
+  src:
+    url("fonts/alk-katerina.ttf") format("truetype");
+}
 
-    <main>
-      <section id="hero">
-        <h1 class="misalmeba" style="font-size: 75px;">მოგესალმებით</h1>
-        <p class="misalmtext">კეთილი იყოს თქვენი ფეხი Pixel Georgia-ს ვებ გვერდზე!</p>
-      </section>
-    </main>
+@font-face {
+  font-family: "achveulL";
+  src:
+    url("fonts/qartuli.ttf") format("truetype");
+}
 
-    <script src="script.js"></script>
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins:wght@600&family=Protest+Strike&display=swap');
 
-  </body>
-</html>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #000;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: url(photos/flag-of-georgia.jpg);
+    opacity: 90%;
+    background-position: center;
+    backdrop-filter: blur(20px);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+a:hover {
+    color: red;
+}
+
+header {
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-left: -30px;
+    font-size: 25px;
+    transition: transform 0.1s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.navbar .logo a {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 5rem;
+    margin: 0px 0px 0px 137px;
+    letter-spacing: 3px;
+    justify-content: center;
+    color: white;
+    transition: transform 0.1s ease;
+}
+
+/*LINKS EASE*/
+
+.mtavari {
+    transition: transform 0.1s ease;
+}
+
+.mtavari:hover {
+    transform: scale(1.05);
+}
+
+.chvensshesaxeb {
+    transition: transform 0.1s ease;
+}
+
+.chvensshesaxeb:hover {
+    transform: scale(1.05);
+}
+
+.tutorialebi {
+    transition: transform 0.1s ease;
+}
+
+.tutorialebi:hover {
+    transform: scale(1.05);
+}
+
+.navbar .toggle-btn {
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action-btn {
+    width: 120px;
+    font-family: 'Lemon Milk';
+    background-color: darkred;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    text-align: center;
+    margin-right: -30px;
+}
+
+.action-btn:hover {
+    transform: scale(1.05);
+    color: #fff;
+    background-color: red;
+}
+
+.action-btn:active {
+    transform: scale(0.95);
+}
+
+/*DROPDOWN*/
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: height .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu {
+    letter-spacing: 3px;
+}
+
+.dropdown-menu.open {
+    height: 170px;
+}
+
+.dropdown-menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-menu .action-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*HERO*/
+
+section#hero {
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+#hero h1{
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-family: sans-serif;
+}
+
+/*STARTING TEXT*/
+
+.misalmeba {
+    margin-top: -70px;
+}
+
+.misalmtext {
+    font-family: 'alk-katerina';
+    font-size: 18px;
+}
+
+.misalmeba,
+.misalmtext {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.misalmeba {
+    animation: typingMisalmeba 1.6s steps(500, end);
+}
+
+@keyframes typingMisalmeba {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.misalmtext {
+    visibility: hidden;
+    animation: typingText 1.8s steps(500, end);
+    animation-delay: 1.6s;
+}
+
+@keyframes typingText {
+    from {
+        width: 0;
+    }
+    to {
+        width: 32%;
+    }
+}
+
+
+/*RESPONSIVE DESIGN*/
+
+
+
+@media(max-width: 576px) {
+    .dropdown-menu {
+        left: 2rem;
+        width: unset;
+    }
+
+    .logo {
+        margin-left: 0px;
+        font-size: 25px;
+    }
+
+    .misalmtext {
+      font-size: 13px;
+    }
+
+    @keyframes typingText {
+    from {
+        width: 0;
+    }
+    to {
+        width: 96%;
+    }
+}
+
+    .misalmeba {
+        font-size: 45px !important;
+    }
+}
+
+@media(max-width: 992px) {
+    body {
+        background-image: url(photos/flag-of-georgia-vertical.png);
+        background-size: cover;
+    }
+    .navbar .links, .navbar .action-btn {
+        display: none;
+    }
+
+    .navbar .toggle-btn {
+        display: block;
+    }
+
+    .dropdown-menu {
+        display: block;
+    }
+
+    .logo {
+        margin-left: 0px;
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 320px) { /*Small Mobile*/
+
+    .misalmtext {
+      font-size: 0.77rem;
+    }
+
+    .dropdown-menu {
+        right: 2rem;
+        top: 60px;
+        height: 0;
+        width: 320px;
+    }
+
+    .misalmeba {
+        font-size: 2px !important;
+    }
+}
