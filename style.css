@@ -197,7 +197,7 @@ section#hero {
     color: #fff;
 }
 
-#hero h1 {
+#hero h1{
     margin-bottom: 1rem;
 }
 
@@ -253,6 +253,37 @@ h1 {
 
 /*RESPONSIVE DESIGN*/
 
+
+
+@media(max-width: 576px) {
+    .dropdown-menu {
+        left: 2rem;
+        width: unset;
+    }
+
+    .logo {
+        margin-left: 0px;
+        font-size: 25px;
+    }
+
+    .misalmtext {
+      font-size: 13px;
+    }
+
+    @keyframes typingText {
+    from {
+        width: 0;
+    }
+    to {
+        width: 96%;
+    }
+}
+
+    .misalmeba {
+        font-size: 45px !important;
+    }
+}
+
 @media(max-width: 992px) {
     body {
         background-image: url(photos/flag-of-georgia-vertical.png);
@@ -276,32 +307,20 @@ h1 {
     }
 }
 
-
-@media(max-width: 576px) {
-    .dropdown-menu {
-        left: 2rem;
-        width: unset;
-    }
-
-    .logo {
-        margin-left: 0px;
-        font-size: 25px;
-    }
+@media(max-width: 320px) { /*Small Mobile*/
 
     .misalmtext {
-      font-size: 15px;
+      font-size: 0.77rem;
     }
 
-    @keyframes typingText {
-    from {
-        width: 0;
+    .dropdown-menu {
+        right: 2rem;
+        top: 60px;
+        height: 0;
+        width: 320px;
     }
-    to {
-        width: 96%;
-    }
-}
 
     .misalmeba {
-        font-size: 55px !important;
+        font-size: 2px !important;
     }
 }
