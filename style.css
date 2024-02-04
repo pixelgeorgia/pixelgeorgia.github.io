@@ -11,6 +11,12 @@
     url("fonts/qartuli.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "Lemon Milk";
+    src:
+      url("fonts/LemonMilk.ttf") format("truetype");
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins:wght@600&family=Protest+Strike&display=swap');
 
 
@@ -185,6 +191,35 @@ header {
     justify-content: center;
 }
 
+.action-btn:hover {
+    background-color: red;
+}
+
+/*dropdown-menu fonts*/
+
+.mtavaridrop,
+.aboutusdrop,
+.tutorialsdrop {
+    font-family: 'alk-katerina';
+}
+
+.mtavaridrop:hover {
+    color: red;
+}
+
+.aboutusdrop:hover {
+    color: red;
+}
+
+}
+.tutorialsdrop:hover {
+    color: red;
+}
+
+
+
+/*dropdown-menu fonts*/
+
 /*HERO*/
 
 section#hero {
@@ -204,6 +239,8 @@ section#hero {
 h1 {
     font-family: sans-serif;
 }
+
+/*HERO*/
 
 /*STARTING TEXT*/
 
@@ -250,6 +287,8 @@ h1 {
     }
 }
 
+
+/*STARTING TEXT*/
 
 /*RESPONSIVE DESIGN*/
 
@@ -317,10 +356,34 @@ h1 {
         right: 2rem;
         top: 60px;
         height: 0;
-        width: 320px;
+        margin-left: -8px;
+        width: 250px;
     }
 
     .misalmeba {
         font-size: 33px !important;
     }
+
+    .action-btn {
+        display: flex;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .misalmtext {
+        font-size: 0.85rem;
+    }
+
+    .action-btn {
+        display: flex;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
 }
