@@ -198,7 +198,6 @@ section#hero {
 }
 
 #hero h1 {
-    font-size: 75px;
     margin-bottom: 1rem;
 }
 
@@ -208,7 +207,7 @@ h1 {
 
 /*STARTING TEXT*/
 
-.misalm {
+.misalmeba {
     margin-top: -70px;
 }
 
@@ -217,17 +216,17 @@ h1 {
     font-size: 18px;
 }
 
-.misalm,
+.misalmeba,
 .misalmtext {
     overflow: hidden;
     white-space: nowrap;
 }
 
-.misalm {
-    animation: typingMisalm 1.6s steps(500, end);
+.misalmeba {
+    animation: typingMisalmeba 1.6s steps(500, end);
 }
 
-@keyframes typingMisalm {
+@keyframes typingMisalmeba {
     from {
         width: 0;
     }
@@ -287,5 +286,22 @@ h1 {
     .logo {
         margin-left: 0px;
         font-size: 25px;
+    }
+
+    .misalmtext {
+      font-size: 15px;
+    }
+
+    @keyframes typingText {
+    from {
+        width: 0;
+    }
+    to {
+        width: 96%;
+    }
+}
+
+    .misalmeba {
+        font-size: 20px;
     }
 }
