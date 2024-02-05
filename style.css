@@ -94,6 +94,24 @@ header {
     transition: transform 0.1s ease;
 }
 
+
+/*LINE UNDER THE .LINKS*/
+.navbar .links .active a {
+    position: relative;
+}
+
+.navbar .links .active a::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid;
+    border-radius: 20px;
+    position: absolute;
+    left: -1px;
+    width: calc(100% - 4px); /* Adjust the width to compensate for the left shift */
+    padding-bottom: 2px;
+}
+/*LINE UNDER THE .LINKS*/
+
 /*LINKS EASE*/
 
 .mtavari {
@@ -169,6 +187,20 @@ header {
     overflow: hidden;
     transition: height .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+
+/* LINE UNDER THE DROPDOWN ITEM */
+.dropdown-menu .aboutusdrop::after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid white; /* Adjust the thickness and color of the line as needed */
+    border-radius: 20px;
+    position: absolute;
+    bottom: 144px;
+    left: 49.6%;
+    transform: translateX(-50%);
+    width: 19.8%;
+}
+/* LINE UNDER THE DROPDOWN ITEM */
 
 .dropdown-menu {
     letter-spacing: 3px;
