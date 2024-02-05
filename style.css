@@ -2,19 +2,19 @@
 @font-face {
   font-family: "alk-katerina";
   src:
-    url("fonts/alk-katerina.ttf") format("truetype");
+    url("C:/Users/user/Desktop/code/pixelgeorgia/fonts/alk-katerina.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "achveulL";
   src:
-    url("fonts/qartuli.ttf") format("truetype");
+    url("C:/Users/user/Desktop/code/pixelgeorgia/fonts/qartuli.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Lemon Milk";
     src:
-      url("fonts/LemonMilk.ttf") format("truetype");
+      url("C:/Users/user/Desktop/code/pixelgeorgia/fonts/LemonMilk.ttf") format("truetype");
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins:wght@600&family=Protest+Strike&display=swap');
@@ -94,7 +94,6 @@ header {
     transition: transform 0.1s ease;
 }
 
-
 /*LINE UNDER THE .LINKS*/
 .navbar .links .active a {
     position: relative;
@@ -106,7 +105,7 @@ header {
     border-bottom: 3px solid;
     border-radius: 20px;
     position: absolute;
-    left: -1px;
+    left: -1px; /* Adjust the value to move the underline left or right */
     width: calc(100% - 4px); /* Adjust the width to compensate for the left shift */
     padding-bottom: 2px;
 }
@@ -195,10 +194,10 @@ header {
     border-bottom: 2px solid white; /* Adjust the thickness and color of the line as needed */
     border-radius: 20px;
     position: absolute;
-    bottom: 144px;
+    bottom: 112px;
     left: 49.6%;
     transform: translateX(-50%);
-    width: 19.8%;
+    width: 33%;
 }
 /* LINE UNDER THE DROPDOWN ITEM */
 
@@ -274,53 +273,13 @@ h1 {
 
 /*HERO*/
 
-/*STARTING TEXT*/
-
-.misalmeba {
-    margin-top: -70px;
+/*TEXT*/
+.text {
+    text-align: center;
+    color: white;
 }
+/*TEXT*/
 
-.misalmtext {
-    font-family: 'alk-katerina';
-    font-size: 18px;
-}
-
-.misalmeba,
-.misalmtext {
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.misalmeba {
-    animation: typingMisalmeba 1.6s steps(500, end);
-}
-
-@keyframes typingMisalmeba {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-}
-
-.misalmtext {
-    visibility: hidden;
-    animation: typingText 1.8s steps(500, end);
-    animation-delay: 1.6s;
-}
-
-@keyframes typingText {
-    from {
-        width: 0;
-    }
-    to {
-        width: 32%;
-    }
-}
-
-
-/*STARTING TEXT*/
 
 /*RESPONSIVE DESIGN*/
 
@@ -336,28 +295,11 @@ h1 {
         margin-left: 0px;
         font-size: 25px;
     }
-
-    .misalmtext {
-      font-size: 13px;
-    }
-
-    @keyframes typingText {
-    from {
-        width: 0;
-    }
-    to {
-        width: 96%;
-    }
-}
-
-    .misalmeba {
-        font-size: 45px !important;
-    }
 }
 
 @media(max-width: 992px) { /*Laptop and a Tablet*/
     body {
-        background-image: url(photos/flag-of-georgia-vertical.png);
+        background-image: url(C:/Users/user/Desktop/code/pixelgeorgia/photos/flag-of-georgia-vertical.png);
         background-size: cover;
     }
     .navbar .links, .navbar .action-btn {
@@ -380,10 +322,6 @@ h1 {
 
 @media(max-width: 320px) { /*Small Mobile*/
 
-    .misalmtext {
-      font-size: 0.79rem;
-    }
-
     .dropdown-menu {
         right: 2rem;
         top: 60px;
@@ -392,9 +330,6 @@ h1 {
         width: 250px;
     }
 
-    .misalmeba {
-        font-size: 33px !important;
-    }
 
     .action-btn {
         display: flex;
@@ -406,9 +341,6 @@ h1 {
 }
 
 @media (max-width: 375px) {
-    .misalmtext {
-        font-size: 0.85rem;
-    }
 
     .action-btn {
         display: flex;
@@ -431,35 +363,8 @@ h1 {
 }
 
 @media (max-width: 768px) {
-    .misalmtext {
-    visibility: hidden;
-    animation: typingText 1.8s steps(500, end);
-    animation-delay: 1.6s;
-}
 
-@keyframes typingText {
-    from {
-        width: 0;
-    }
-    to {
-        width: 90%;
-    }
-}
-
-.misalmeba {
-    animation: typingMisalmeba 1.6s steps(500, end);
-}
-
-@keyframes typingMisalmeba {
-    from {
-        width: 0;
-    }
-    to {
-        width: 67%;
-    }
-}
-
-.action-btn {
+    .action-btn {
         display: flex;
         margin: auto;
         align-items: center;
@@ -482,14 +387,4 @@ h1 {
         visibility: hidden;
         animation: typingText 1.8s steps(500, end);
         animation-delay: 1.6s;
-}
-
-@keyframes typingText {
-    from {
-        width: 0;
-    }
-    to {
-        width: 75%;
-    }
-}
 }
