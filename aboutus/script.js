@@ -14,12 +14,3 @@ const toggleBtn = document.querySelector('.toggle-btn')
       window.onload = function() {
             document.body.style.zoom = "100%";
         };
-
-        document.addEventListener('DOMContentLoaded', function () {
-    var misalmText = document.querySelector('.misalmtext');
-    var misalmElement = document.querySelector('.misalmeba');
-
-    misalmElement.addEventListener('animationend', function () {
-        misalmText.style.visibility = 'visible';
-    });
-});
