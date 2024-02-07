@@ -2,19 +2,19 @@
 @font-face {
   font-family: "alk-katerina";
   src:
-    url("C:/Users/user/Desktop/code/pixelgeorgia/fonts/alk-katerina.ttf") format("truetype");
+    url("fonts/alk-katerina.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "achveulL";
   src:
-    url("C:/Users/user/Desktop/code/pixelgeorgia/fonts/qartuli.ttf") format("truetype");
+    url("fonts/qartuli.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Lemon Milk";
     src:
-      url("C:/Users/user/Desktop/code/pixelgeorgia/fonts/LemonMilk.ttf") format("truetype");
+      url("fonts/LemonMilk.ttf") format("truetype");
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins:wght@600&family=Protest+Strike&display=swap');
@@ -299,7 +299,7 @@ h1 {
 
 @media(max-width: 992px) { /*Laptop and a Tablet*/
     body {
-        background-image: url(C:/Users/user/Desktop/code/pixelgeorgia/photos/flag-of-georgia-vertical.png);
+        background-image: url(photos/flag-of-georgia-vertical.png);
         background-size: cover;
     }
     .navbar .links, .navbar .action-btn {
