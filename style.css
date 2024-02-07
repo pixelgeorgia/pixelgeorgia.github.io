@@ -342,6 +342,23 @@ h1 {
         margin-left: 0px;
         font-size: 25px;
     }
+
+    .misalmtext {
+      font-size: 13px;
+    }
+
+    @keyframes typingText {
+    from {
+        width: 0;
+    }
+    to {
+        width: 96%;
+    }
+}
+
+    .misalmeba {
+        font-size: 45px !important;
+    }
 }
 
 @media(max-width: 992px) { /*Laptop and a Tablet*/
@@ -369,6 +386,10 @@ h1 {
 
 @media(max-width: 320px) { /*Small Mobile*/
 
+    .misalmtext {
+      font-size: 0.79rem;
+    }
+
     .dropdown-menu {
         right: 2rem;
         top: 60px;
@@ -377,6 +398,9 @@ h1 {
         width: 250px;
     }
 
+    .misalmeba {
+        font-size: 33px !important;
+    }
 
     .action-btn {
         display: flex;
@@ -388,6 +412,9 @@ h1 {
 }
 
 @media (max-width: 375px) {
+    .misalmtext {
+        font-size: 0.85rem;
+    }
 
     .action-btn {
         display: flex;
@@ -410,8 +437,35 @@ h1 {
 }
 
 @media (max-width: 768px) {
+    .misalmtext {
+    visibility: hidden;
+    animation: typingText 1.8s steps(500, end);
+    animation-delay: 1.6s;
+}
 
-    .action-btn {
+@keyframes typingText {
+    from {
+        width: 0;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+.misalmeba {
+    animation: typingMisalmeba 1.6s steps(500, end);
+}
+
+@keyframes typingMisalmeba {
+    from {
+        width: 0;
+    }
+    to {
+        width: 67%;
+    }
+}
+
+.action-btn {
         display: flex;
         margin: auto;
         align-items: center;
@@ -434,4 +488,14 @@ h1 {
         visibility: hidden;
         animation: typingText 1.8s steps(500, end);
         animation-delay: 1.6s;
+}
+
+@keyframes typingText {
+    from {
+        width: 0;
+    }
+    to {
+        width: 75%;
+    }
+}
 }
