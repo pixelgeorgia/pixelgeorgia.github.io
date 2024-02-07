@@ -23,3 +23,11 @@ const toggleBtn = document.querySelector('.toggle-btn')
         misalmText.style.visibility = 'visible';
     });
 });
+
+let docTitle = document.title;
+        window.addEventListener("blur", () =>{
+            document.title = "დაბრუნდი :(";
+      })
+        window.addEventListener("focus", () =>{
+            document.title = docTitle
+      })
