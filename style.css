@@ -280,6 +280,53 @@ h1 {
 }
 /*TEXT*/
 
+/*STARTING TEXT*/
+
+.misalmeba {
+    margin-top: -70px;
+}
+
+.misalmtext {
+    font-family: 'alk-katerina';
+    font-size: 18px;
+}
+
+.misalmeba,
+.misalmtext {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.misalmeba {
+    animation: typingMisalmeba 1.6s steps(500, end);
+}
+
+@keyframes typingMisalmeba {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.misalmtext {
+    visibility: hidden;
+    animation: typingText 1.8s steps(500, end);
+    animation-delay: 1.6s;
+}
+
+@keyframes typingText {
+    from {
+        width: 0;
+    }
+    to {
+        width: 32%;
+    }
+}
+
+
+/*STARTING TEXT*/
 
 /*RESPONSIVE DESIGN*/
 
